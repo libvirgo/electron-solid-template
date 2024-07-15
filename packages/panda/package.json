@@ -1,0 +1,32 @@
+{
+  "name": "@manga/panda-preset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@pandacss/dev": "^0.42.0",
+    "tsup": "^8.1.0"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "clean": true,
+    "dts": true,
+    "sourcemap": true,
+    "format": [
+      "esm",
+      "cjs"
+    ]
+  }
+}

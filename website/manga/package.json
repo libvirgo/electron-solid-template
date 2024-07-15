@@ -1,0 +1,31 @@
+{
+  "name": "manga",
+  "private": true,
+  "version": "beta",
+  "type": "module",
+  "scripts": {
+    "prepare": "panda codegen",
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.42.0",
+    "electron": "^31.2.1",
+    "electron-builder": "^24.13.3",
+    "solid-devtools": "^0.30.1",
+    "vite": "^5.1.6",
+    "vite-plugin-electron": "^0.28.6",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "vite-plugin-solid": "^2.10.2",
+    "vite-tsconfig-paths": "^4.3.2",
+    "@manga/panda-preset": "workspace:*"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.14.1",
+    "electron-context-menu": "^4.0.1",
+    "solid-js": "^1.8.18"
+  },
+  "main": "dist-electron/main.js"
+}
